@@ -11,12 +11,14 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    font-weight: bold;
   }
     .navbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #333;
+      background: linear-gradient(to right,  #978d83 0%,#978d83 48%,#438696 52%,#438696 100%);
+      /* background-color: #438696; */
       padding: 10px 30px;
       color: white;
     }
@@ -25,6 +27,7 @@ html, body {
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-left: -18px;
     }
 
     .logo img {
@@ -76,13 +79,13 @@ html, body {
     }
 
     .search-btn {
-      background-color: #4CAF50;
+      background-color: #438696;
       color: white;
 
     }
 
     .reset-btn {
-      background-color: #4CAF50;
+      background-color: #438696;
       color: white;
       
     }
@@ -91,6 +94,37 @@ html, body {
         padding: 60px 30px;
         max-width: 600px;
         margin-left: 60px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    h1 {
+        line-height: 1.4;
+        word-wrap: break-word;
+        max-width: 450px;
+    }
+    
+     p {
+       max-width: 400px;
+       word-wrap: break-word;
+       overflow:break-word;
+    }
+
+    .book-now-btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 25px; /* Adds space between paragraph and button */
+      }
+      
+      .book-now-btn:hover {
+        background-color: #0056b3;
       }
   
       .social-icons {
@@ -100,7 +134,7 @@ html, body {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        margin-bottom: 50px;
+        margin-top: 95px;
       }
   
       .social-icons a img {
