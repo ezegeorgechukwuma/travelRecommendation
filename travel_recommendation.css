@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-image: url('images/lady_standing_photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 10px 30px;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .nav-center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-center a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-center a:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+   .search-area {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 12px;
+      padding: 5px;
+      gap: 8px; /* Space between input and buttons */
+    }
+
+    .search-area input[type="text"] {
+      padding: 8px;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      width: 200px;
+    }
+
+    .search-area button {
+      padding: 8px 12px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 7px;
+    }
+
+    .search-btn {
+      background-color: #4CAF50;
+      color: white;
+
+    }
+
+    .reset-btn {
+      background-color: #4CAF50;
+      color: white;
+      
+    }
+
+    .content {
+        padding: 60px 30px;
+        max-width: 600px;
+        margin-left: 60px;
+      }
+  
+      .social-icons {
+        position: fixed;
+        top: 150px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 50px;
+      }
+  
+      .social-icons a img {
+        width: 28px;
+        height: 28px;
+        filter: brightness(0) invert(1);
+        transition: transform 0.2s;
+      }
+  
+      .social-icons a img:hover {
+        transform: scale(1.2);
+      }
