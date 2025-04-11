@@ -370,6 +370,47 @@ html, body {
       .contact-form textarea::placeholder {
          color: rgba(255, 255, 255, 0.7);
 }
+
+/* css function to display search result */
+
+/* Keep city display on far right */
+#cityDisplay {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    align-items: flex-end;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  
+  #cityDisplay img {
+    object-fit: cover;         /* Ensures proper image display */
+    border-radius: 5px;        /* Optional: rounded corners for image */
+    margin-bottom: 10px;       /* Space between image and text */
+    width: 300px;               /* Makes image responsive within the container */
+    align-self: flex-end;      /* Ensures the image is right-aligned */
+  }
+
+  #cityDisplay .text-content {
+    width: 300px;              /* Same width as the image */
+    text-align: left;          /* Left-aligns text within this container */
+  }
+  
+  #cityDisplay h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  #cityDisplay p {
+    margin-top: 0;
+    color: white;
+    line-height: 1.5;
+  }
       
       
 
