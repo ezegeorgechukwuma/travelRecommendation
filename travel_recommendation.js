@@ -110,3 +110,9 @@ function resetSearch() {
   document.getElementById('searchResults').innerHTML = '';
   document.getElementById('cityDisplay').innerHTML = '';
 }
+
+
+document.getElementById("alertButton").addEventListener("click", function(event) {
+    event.preventDefault(); // This prevents navigation to recommendation.html
+    alert("Coming Soon!");
+});
