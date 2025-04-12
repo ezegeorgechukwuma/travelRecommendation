@@ -1,3 +1,9 @@
+    const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+    console.log("Current time in New York:", newYorkTime);
+
+
+
 let citiesData = [];  // Final array that will hold all searchable destinations
 
 // Function to load and prepare data from the JSON file
@@ -55,7 +61,7 @@ function executeSearch() {
     
     // Ensure the user has entered something before proceeding
     if (input === '') {
-      cityDisplay.innerHTML = '<p>Please enter a destination to search.</p>';
+      cityDisplay.innerHTML = '<p class="paragraph2">Please enter a destination to search.</p>';
       return;
     }
     
@@ -75,8 +81,11 @@ function executeSearch() {
     cityDisplay.innerHTML = `
     <div class="text-content">
     <img src="${firstMatch.imageUrl}" alt="${firstMatch.name}" width="300">
+     <div class="text-container">
       <h3>${firstMatch.name}</h3>
       <p>${firstMatch.description}</p>
+      <button type="button" id="visit">Visit</button>
+     </div>
     </div>
     `;
   }

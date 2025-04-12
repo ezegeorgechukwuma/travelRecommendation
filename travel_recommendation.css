@@ -375,7 +375,7 @@ html, body {
 
 /* Keep city display on far right */
 #cityDisplay {
-    position: absolute;
+    position: absolute;  /*to ensure content remains in the same place in home page without over lapping*/
     top: 100px;
     right: 20px;
     display: flex;
@@ -398,19 +398,56 @@ html, body {
   #cityDisplay .text-content {
     width: 300px;              /* Same width as the image */
     text-align: left;          /* Left-aligns text within this container */
+    /* height: 150%; */
   }
   
   #cityDisplay h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: white;
+    color: #978d83;
   }
   
   #cityDisplay p {
     margin-top: 0;
-    color: white;
+    color: #978d83;
     line-height: 1.5;
   }
+
+  #cityDisplay .paragraph2 {
+    color: white;
+  }
+
+  .text-container {
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+   
+  #visit {
+        background-color: #978d83;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 50px;
+        box-sizing: content-box;
+        height: 30px;
+  }
       
+   #visit:hover {
+        background-color: #438696;
+    }   
+    
+    #searchResults{
+    position: absolute;  
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
       
 
