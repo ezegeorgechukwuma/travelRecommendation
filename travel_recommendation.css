@@ -18,7 +18,7 @@ html, body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: linear-gradient(to right,  #978d83 0%,#978d83 48%,#438696 52%,#438696 100%);  /* to merge two background-color in the nav bar/*
+      background: linear-gradient(to right,  #978d83 0%,#978d83 48%,#438696 52%,#438696 100%); 
       padding: 10px 30px;
       color: white;
     }
