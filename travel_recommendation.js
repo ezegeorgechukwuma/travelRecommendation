@@ -20,7 +20,7 @@ function loadDestinationData() {
         }))
       );
 
-      // Add other categories like temples and beaches (if they exist)
+      // Add other categories like temples and beaches 
       const temples = data.temples?.map(temple => ({
         ...temple,
         category: 'temples'
@@ -34,10 +34,10 @@ function loadDestinationData() {
       // Combine all into one array
       citiesData = [...countryCities, ...temples, ...beaches];
 
-      console.log('✅ All destination data loaded:', citiesData);
+      console.log('All destination data loaded:', citiesData);
     })
     .catch(error => {
-      console.error('❌ Error loading data:', error.message);
+      console.error(' Error loading data:', error.message);
     });
 }
 
@@ -71,7 +71,7 @@ if (validCategories.includes(input)) {
     resultsContainer.innerHTML = `<p>No ${input} found.</p>`;
     return;
   }
-
+ // Show first match of category input
   categoryResults.forEach(item => {
     const card = document.createElement('div');
     card.classList.add('text-content');
@@ -89,7 +89,6 @@ if (validCategories.includes(input)) {
   return;
 }
 
-
   // Normal search for specific destination
   const matches = citiesData.filter(item =>
     item.name.toLowerCase().includes(input) || item.description.toLowerCase().includes(input)
@@ -100,7 +99,7 @@ if (validCategories.includes(input)) {
     return;
   }
 
-  // Show first match
+  // Show first match of input
   const firstMatch = matches[0];
   cityDisplay.innerHTML = `
     <div class="text-content">
@@ -122,8 +121,8 @@ function resetSearch() {
   document.getElementById('cityDisplay').innerHTML = '';
 }
 
-
-document.getElementById("alertButton").addEventListener("click", function(event) {
-    event.preventDefault(); // This prevents navigation to recommendation.html
-    alert("Coming Soon!");
-});
+// eventListener for recomndation tab
+// document.getElementById("alertButton").addEventListener("click", function(event) {
+//     event.preventDefault(); // This prevents navigation to recommendation.html
+//     alert("Coming Soon!");
+// });
