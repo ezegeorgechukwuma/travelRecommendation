@@ -98,7 +98,7 @@ html, body {
         padding: 60px 30px;
         max-width: 600px;
         margin-left: 60px;
-        margin-top: 20px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -394,8 +394,9 @@ html, body {
   
   #cityDisplay img {
     object-fit: cover;         /* Ensures proper image display */
-    border-radius: 5px;        /* Optional: rounded corners for image */
+    border-radius: 5px;        
     margin-bottom: 10px;       /* Space between image and text */
+    /* margin-top: 5px; */
     width: 300px;               /* Makes image responsive within the container */
     align-self: flex-end;      /* Ensures the image is right-aligned */
   }
@@ -403,7 +404,7 @@ html, body {
   #cityDisplay .text-content {
     width: 300px;              /* Same width as the image */
     text-align: left;          /* Left-aligns text within this container */
-    margin-top: 5px;
+    margin-top: 2px;
   }
   
   #cityDisplay h3  {
@@ -449,12 +450,15 @@ html, body {
    
     
 /* Style for category-based search results (searchResults container) */
-    #searchResults{
+#searchResults{
     position: absolute;  
     right: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    max-width: 330px;
+  max-height: 70vh; /* Limit vertical height to 70% of the viewport */
+  /* overflow-y: auto; Enables vertical scrolling */
     }
 
 #searchResults .text-content {
@@ -468,10 +472,8 @@ html, body {
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
-    margin-top: 10px;
     width: 300px;
     align-self: flex-end;
-    max-height: fit-content;
   }
   
   #searchResults h3 {
